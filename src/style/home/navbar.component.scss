@@ -13,7 +13,7 @@
   & > a {
     font-family: $fontMaster;
     font-weight: $fontMasterWeight;
-    color: $fontColorOnWhiteBackground;
+    color: $fontMasterColor;
   }
 
   &.navbar__item--highlighted > a {
