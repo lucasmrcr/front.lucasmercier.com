@@ -6,6 +6,7 @@ import {NavbarComponent} from 'src/app/page/home/components/navbar.component'
 import {HomeComponent} from 'src/app/page/home/home.component'
 import {PresentationComponent} from 'src/app/page/home/components/presentation.component'
 import {TechnicalComponent} from 'src/app/page/technical/technical.component'
+import {LogoComponent} from './page/shared/logo.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import {TechnicalComponent} from 'src/app/page/technical/technical.component'
     HomeComponent,
     PresentationComponent,
     TechnicalComponent,
-    ExperienceComponent
+    ExperienceComponent,
+    LogoComponent
   ],
   imports: [
     BrowserModule,

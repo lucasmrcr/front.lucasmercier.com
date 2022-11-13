@@ -1,0 +1,19 @@
+@import "../variables";
+
+.logo {
+  font-family: Signika, sans-serif;
+  color: $fontMasterColor;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.logo--thin {
+  font-weight: 500;
+  font-size: 1.4rem;
+  letter-spacing: .69rem;
+}
+
+.logo--heavy {
+  font-weight: 700;
+  font-size: 1.7rem;
+}
