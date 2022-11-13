@@ -1,7 +1,7 @@
 import {Component} from '@angular/core';
 
 @Component({
-  selector: 'app-navbar',
+  selector: 'app-home-navbar',
   templateUrl: '../../../../template/home/navbar.component.html',
   styleUrls: ['../../../../style/home/navbar.component.scss']
 })
@@ -30,5 +30,6 @@ export class NavbarComponent {
     },
   ]
 
-  constructor() { }
+  constructor() {
+  }
 }

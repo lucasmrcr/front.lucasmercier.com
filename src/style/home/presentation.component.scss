@@ -1,0 +1,79 @@
+@import "../shared/variables";
+
+.presentation--round::before {
+  position: absolute;
+  background-color: #A5C9CA;
+  height: 60rem;
+  width: 60rem;
+  top: -27.5rem;
+  right: 0;
+  border-radius: 50%;
+  content: '';
+  z-index: -1;
+}
+
+.presentation__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 4rem 0;
+}
+
+.presentation__container__illustration {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.presentation__container__illustration > img {
+  height: 25rem;
+}
+
+.presentation__container__text > p {
+  color: $fontMasterColor;
+}
+
+.presentation__container__text--title {
+  font-family: Signika, serif;
+  font-weight: 700;
+  font-size: 3rem;
+  margin: 0;
+}
+
+.presentation__container__text--subtitle {
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin: 0 0 1rem;
+}
+
+.presentation__container__text {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.presentation__container__text--description {
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  margin: 1rem 0;
+}
+
+.presentation__container__buttons {
+  display: flex;
+}
+
+.presentation__container__button {
+  display: block;
+  color: $fontMasterColor;
+  padding: 10px 20px;
+  font-family: Montserrat, sans-serif;
+  border: 1px solid $fontMasterColor;
+  border-radius: 4px;
+  margin-right: 1rem;
+}
+
+.presentation__container__button--important {
+  border: none;
+  color: #ffffff;
+  background: linear-gradient(0deg, #395B64, #A5C9CA);
+}
