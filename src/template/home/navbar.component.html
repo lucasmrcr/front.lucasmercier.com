@@ -1,0 +1,10 @@
+<nav class="navbar">
+  <ul>
+    <li *ngFor="let navbarItem of navbarItems" [ngClass]="{
+        'navbar__item': true,
+        'navbar__item--highlighted': navbarItem.isHighlighted
+    }">
+      <a href="{{ navbarItem.url }}">{{navbarItem.name}}</a>
+    </li>
+  </ul>
+</nav>

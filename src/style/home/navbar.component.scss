@@ -1,0 +1,24 @@
+@import "../shared/variables";
+
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1.5rem 0;
+}
+
+.navbar__item {
+  display: inline;
+  padding-left: 2rem;
+
+  & > a {
+    font-family: $fontMaster;
+    font-weight: $fontMasterWeight;
+    color: $fontColorOnWhiteBackground;
+  }
+
+  &.navbar__item--highlighted > a {
+    background-color: #E7F6F2;
+    border-radius: 4px;
+    padding: .4rem 1rem;
+  }
+}
