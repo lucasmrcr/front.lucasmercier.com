@@ -1,18 +1,27 @@
 .technical__container {
   position: relative;
   margin-top: 200px;
+  margin-bottom: 200px;
   background-color: #395B64;
 
-  &:before {
+  &:before, &:after {
     content: '';
     position: absolute;
     left: 0;
     right: 0;
-    top: -200px;
     height: 200px;
-    background-image: url("/assets/img/layered-waves-haikei.svg");
     background-repeat: no-repeat;
     background-size: cover;
+  }
+
+  &:before {
+    top: -200px;
+    background-image: url("/assets/img/layered-waves-haikei.svg");
     background-position-y: 99%;
+  }
+
+  &:after {
+    bottom: -200px;
+    background-image: url("/assets/img/layered-waves-revert-haikei.svg");
   }
 }
