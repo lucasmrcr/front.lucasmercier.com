@@ -13,12 +13,13 @@
   & > a {
     font-family: $fontMaster;
     font-weight: $fontMasterWeight;
-    color: $fontMasterColor;
+    color: #eeeeee;
   }
 
   &.navbar__item--highlighted > a {
-    background-color: #E7F6F2;
+    background-color: #00ADB5;
     border-radius: 4px;
     padding: .4rem 1rem;
+    font-weight: $fontMasterWeightBold;
   }
 }

@@ -2,7 +2,7 @@
 
 .presentation--round::before {
   position: absolute;
-  background-color: #A5C9CA;
+  background-color: #393E46;
   height: 60rem;
   width: 60rem;
   top: -27.5rem;
@@ -67,6 +67,7 @@
   color: $fontMasterColor;
   padding: 10px 20px;
   font-family: Montserrat, sans-serif;
+  font-weight: $fontMasterWeightBold;
   border: 1px solid $fontMasterColor;
   border-radius: 4px;
   margin-right: 1rem;
@@ -75,5 +76,5 @@
 .presentation__container__button--important {
   border: none;
   color: #ffffff;
-  background: linear-gradient(0deg, #395B64, #A5C9CA);
+  background: #00ADB5;
 }
