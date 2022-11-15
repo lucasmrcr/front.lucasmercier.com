@@ -8,6 +8,7 @@ import {HomeComponent} from 'src/app/page/home/home.component'
 import {PresentationComponent} from 'src/app/page/home/components/presentation.component'
 import {TechnicalComponent} from 'src/app/page/technical/technical.component'
 import {LogoComponent} from './page/shared/logo.component';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import {LogoComponent} from './page/shared/logo.component';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent],
