@@ -10,5 +10,6 @@ export class RepositoryDTO {
   owner!: OwnerDTO
   description?: string
   language?: string
+  languages?: Map<string, number>
 
 }
