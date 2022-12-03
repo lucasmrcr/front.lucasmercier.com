@@ -51,5 +51,5 @@ jobs:
           node-version: 16
       - name: Install angular cli
         run: npm install -g @angular/cli
-      - name: Gradle build
+      - name: Angular build
         run: cd ${{ github.event.repository.name }} && npm install && ng build
