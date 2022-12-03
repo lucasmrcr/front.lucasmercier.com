@@ -52,4 +52,4 @@ jobs:
       - name: Install angular cli
         run: npm install -g @angular/cli
       - name: Gradle build
-        run: cd ${{ github.event.repository.name }} && ng build
+        run: cd ${{ github.event.repository.name }} && npm install && ng build
