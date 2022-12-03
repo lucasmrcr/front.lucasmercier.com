@@ -46,6 +46,10 @@ jobs:
         with:
           fetch-depth: 0
           path: ${{ github.event.repository.name }}
-      - name: Angular build
-        run: >
-          cd ${{ github.event.repository.name }} && /bin/sh gradlew build
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+      - name: Install angular cli
+        run: npm install -g @angular/cli
+      - name: Gradle build
+        run: cd ${{ github.event.repository.name }} && ng build
