@@ -28,6 +28,4 @@ export class NavbarComponent {
             isHighlighted: true,
         },
     ];
-
-    constructor() {}
 }
