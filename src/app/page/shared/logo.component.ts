@@ -1,10 +1,8 @@
-import {Component} from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-shared-logo',
-  templateUrl: '../../../template/shared/logo.component.html',
-  styleUrls: ['../../../style/shared/logo.component.scss']
+    selector: 'app-shared-logo',
+    templateUrl: '../../../template/shared/logo.component.html',
+    styleUrls: ['../../../style/shared/logo.component.scss'],
 })
-export class LogoComponent {
-
-}
+export class LogoComponent {}
