@@ -1,5 +1,5 @@
 export class OwnerDTO {
-  name!: string
-  avatarUrl!: string
-  type!: string
+    name!: string;
+    avatarUrl!: string;
+    type!: string;
 }
