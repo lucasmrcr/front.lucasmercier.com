@@ -1,23 +1,21 @@
 <div class="technical__container">
-  <h1>Certains de mes récents projets</h1>
-  <div class="repository__wrapper">
-    <div *ngFor="let repository of repositories" class="repository">
-      <img src="{{ repository.owner.avatarUrl }}" alt="">
-      <div class="repository__description">
-        <h4>{{ repository.fullName }}</h4>
-        <p>{{ repository.description }}</p>
-        <div *ngIf="repository.languages" class="repository__languages">
-        <span *ngFor="let language of repository.languages | keyvalue" class="{{language.key}}">
-          {{ language.key }}
-        </span>
+    <h1>Certains de mes récents projets</h1>
+    <div class="repository__wrapper">
+        <div *ngFor="let repository of repositories" class="repository">
+            <img src="{{ repository.owner.avatarUrl }}" alt="" />
+            <div class="repository__description">
+                <h4>{{ repository.fullName }}</h4>
+                <p>{{ repository.description }}</p>
+                <div *ngIf="repository.languages" class="repository__languages">
+                    <span *ngFor="let language of repository.languages | keyvalue" class="{{ language.key }}">
+                        {{ language.key }}
+                    </span>
+                </div>
+            </div>
+            <div class="repository--private" *ngIf="repository.isPrivate">Private</div>
+            <div class="repository--visit" *ngIf="!repository.isPrivate">
+                <a href="https://github.com/{{ repository.fullName }}" target="_blank">Voir le dépôt</a>
+            </div>
         </div>
-      </div>
-      <div class="repository--private" *ngIf="repository.isPrivate">
-        Private
-      </div>
-      <div class="repository--visit" *ngIf="!repository.isPrivate">
-        <a href="https://github.com/{{ repository.fullName }}" target="_blank">Voir le dépôt</a>
-      </div>
     </div>
-  </div>
 </div>
